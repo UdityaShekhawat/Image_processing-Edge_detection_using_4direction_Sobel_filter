@@ -102,7 +102,7 @@ module tb_sobel(
      end
  end
  
- imageProcessTop DUT(
+ top_module DUT(
     .axi_clk(clk),
     .axi_reset_n(reset),
    
