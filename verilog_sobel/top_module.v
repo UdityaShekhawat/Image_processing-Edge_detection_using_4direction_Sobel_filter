@@ -31,7 +31,7 @@ module imageProcessTop(
         .o_intr(o_intr)
     );    
     
-    // 8-Direction Sobel convolution module
+    // 4-Direction Sobel convolution module
     sobel_4direction conv_inst(
         .i_clk(axi_clk),
         .i_rst(!axi_reset_n),
