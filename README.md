@@ -16,20 +16,20 @@ Pipelined Architecture: Multi-stage pipeline for high-throughput processing
 
 Key Components
 
-imageControl: Manages line buffers and generates 3x3 pixel windows
-lineBuffer: Stores image lines and outputs 3-pixel windows
-sobel_4direction: Performs 4-direction Sobel convolution with pipelining
-imageProcessTop: Top-level module with AXI4-Stream output buffering
-outputBuffer: AXI4-Stream FIFO providing flow control and standard interface
+imageControl: Manages line buffers and generates 3x3 pixel windows.
+lineBuffer: Stores image lines and outputs 3-pixel windows.
+sobel_4direction: Performs 4-direction Sobel convolution with pipelining.
+imageProcessTop: Top-level module with AXI4-Stream output buffering.
+outputBuffer: AXI4-Stream FIFO providing flow control and standard interface.
 
 
 Technical Specifications
 
-Input: 8-bit grayscale pixels
-Output: Binary edge map (8-bit values: 0x00 or 0xFF)
-Image Width: 512 pixels per line
-Processing Window: 3x3 pixel neighborhood
-Clock Domain: Single clock design
+Input: 8-bit grayscale pixels.
+Output: Binary edge map (8-bit values: 0x00 or 0xFF).
+Image Width: 512 pixels per line.
+Processing Window: 3x3 pixel neighborhood.
+Clock Domain: Single clock design.
 
 
 
