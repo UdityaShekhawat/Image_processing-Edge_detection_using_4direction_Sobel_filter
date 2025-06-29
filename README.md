@@ -6,8 +6,12 @@ Overview
 This project implements a complete image processing pipeline in Verilog featuring:
 
 Line Buffer Management: Circular buffer system for streaming image data
+
 4-Direction Sobel Edge Detection: Enhanced edge detection using 0°, 45°, 90°, and 135° kernels
+
+
 Pipelined Architecture: Multi-stage pipeline for high-throughput processing
+
 
 
 Key Components
