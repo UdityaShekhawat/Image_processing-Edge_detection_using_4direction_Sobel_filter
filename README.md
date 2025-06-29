@@ -2,7 +2,7 @@
 This project implements an 4-direction Sobel edge detection filter using Verilog HDL, supporting grayscale BMP image input/output.
 
 
-Overview
+##Overview
 
 
 This project implements a complete image processing pipeline in Verilog featuring:
@@ -16,7 +16,7 @@ Pipelined Architecture: Multi-stage pipeline for high-throughput processing
 
 
 
-Key Components
+##Key Components
 
 imageControl: Manages line buffers and generates 3x3 pixel windows.
 
@@ -33,7 +33,7 @@ imageProcessTop: Top-level module with AXI4-Stream output buffering.
 outputBuffer: AXI4-Stream FIFO providing flow control and standard interface.
 
 
-Technical Specifications
+##Technical Specifications
 
 Input: 8-bit grayscale pixels.
 
@@ -47,9 +47,9 @@ Clock Domain: Single clock design.
 
 
 
-#Module Description
+##Module Description
 
-imageControl
+###imageControl
 
 Manages 4 line buffers in circular fashion
 
@@ -59,7 +59,7 @@ Implements state machine for buffer management
 
 Provides interrupt signaling for processing completion
 
-sobel_4direction
+###sobel_4direction
 
 Implements 4 different Sobel kernels for comprehensive edge detection
 
@@ -68,7 +68,7 @@ Implements 4 different Sobel kernels for comprehensive edge detection
 Configurable threshold for edge/non-edge classification
 Outputs binary edge map
 
-lineBuffer
+###lineBuffer
 
 Stores 512 pixels per line
 Provides 3 consecutive pixels for window generation
