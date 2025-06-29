@@ -73,3 +73,12 @@ Outputs binary edge map
 Stores 512 pixels per line
 Provides 3 consecutive pixels for window generation
 Dual-port operation with independent read/write pointers
+
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/8fcec706-6b86-4fee-af20-30db0a5353d1)
+
